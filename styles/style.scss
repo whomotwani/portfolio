@@ -1,0 +1,301 @@
+$color: #757575;
+$radius: 5px;
+$shadow: 0px 0px 10px darkGray;
+// $primaryColor: #097770;
+$primaryColor: #009688;
+$blue: #02a1be;
+$sidebarWidth: 30%;
+$mainWidth: calc(100% - $sidebarWidth);
+
+* {
+    box-sizing: border-box;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    color: $color;
+    font-family: sans-serif;
+
+}
+
+html {
+    background-color: #d5d5d5;
+}
+
+.container {
+    padding: 1rem;
+    display: flex;
+
+}
+
+a {
+    text-decoration: none;
+    color: $blue;
+}
+
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 15px;
+}
+
+aside {
+    width: $sidebarWidth;
+    min-width: $sidebarWidth;
+    box-shadow: $shadow;
+    border-radius: $radius;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    margin: 0 .5rem;
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        border-radius: $radius;
+    }
+
+    .profile {
+        color: #121212 !important;
+    }
+}
+
+main {
+    width: $mainWidth;
+    display: flex;
+    flex-direction: column;
+    margin: 0 .5rem;
+    flex-grow: 1;
+
+
+    &>* {
+        padding: 1rem;
+        box-shadow: $shadow;
+        border-radius: $radius;
+        background-color: #f5f5f5;
+        margin-bottom: .8rem;
+    }
+
+    .projects {
+        margin-bottom: 0;
+    }
+
+}
+
+.personal-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+
+    .small {
+        font-size: 16px;
+        margin-left: .8rem;
+    }
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.socialmedia-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.h-separator {
+    height: 1px;
+    width: 100%;
+    background-color: lightgray;
+    margin: .5rem auto;
+}
+
+.current {
+    background-color: $primaryColor;
+    color: white;
+    padding: .3rem;
+    margin: 0;
+    border-radius: $radius;
+}
+
+.work-icon {
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.section-header {
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+.skill-info {
+    margin: .8rem 0;
+}
+
+.progressbar {
+    width: 100%;
+    height: 25px;
+    background-color: lightgray;
+    border-radius: 16px;
+
+    .bar {
+        height: 100%;
+        border-radius: 16px;
+        background-color: $primaryColor;
+        text-align: center;
+        color: white;
+    }
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.w-75 {
+    width: 75% !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.w-85 {
+    width: 85% !important;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.w-95 {
+    width: 95% !important;
+}
+
+footer {
+    padding: 3rem !important;
+    background-color: $primaryColor;
+    text-align: center;
+
+    .content {
+        a {
+            text-decoration: none;
+            margin: 0 .5rem;
+        }
+    }
+
+    .content>* {
+        color: white !important;
+
+    }
+}
+
+section {
+    span {
+        margin-left: .8rem;
+    }
+
+    .main-headers {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.job {
+    margin: 1rem 0;
+
+    &>* {
+        margin: .5rem 0;
+    }
+
+
+    .duration {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: $primaryColor !important;
+        font-weight: bold;
+    }
+}
+
+
+.primaryColor {
+    color: $primaryColor !important;
+}
+
+@media screen and (min-width: 1400px) {
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+}
+
+
+@media screen and (max-width: 870px) {
+
+    aside {
+        width: 35% !important;
+        min-width: 35% !important;
+        max-width: 35% !important;
+
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    aside {
+        width: 40% !important;
+        min-width: 40% !important;
+        max-width: 40% !important;
+        height: auto;
+
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    aside {
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        height: auto;
+        margin: 0;
+    }
+
+    .container {
+        padding: 0.8rem;
+    }
+
+    .main-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        margin: 0;
+        margin-top: 0.8rem;
+    }
+}
